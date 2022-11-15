@@ -21,14 +21,20 @@ namespace TestFirstExercises {
 
         // implement this method so that it returns true if num is even, otherwise false
         public static bool EvenOdd( int num ) {
-            return false;
+            return num % 2 == 0;
             }
 
         // implement this method so that it returns 
         // the sum of all numbers between 1 and n inclusive 
         // that are divisible by either 2 or 5
         public static int SumEvenFive( int max ) {
-            return -1;
+            int sum = 0;
+            for ( int i = max; i > 0; i-- ) {
+                if ( i % 2 == 0 || i % 5 == 0 ) {
+                    sum += i;
+                    }
+                }
+            return sum;
             }
 
         // implement this method so it returns true if input is "password"
