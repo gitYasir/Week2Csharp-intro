@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace TestFirstExercises {
     public class Methods {
@@ -10,7 +11,12 @@ namespace TestFirstExercises {
         // squares it, adds 101, divides the result by 7, then subtracts 4.  
         // Return a double rounded to 3 decimal places.
         public static double BODMAS( int inputNumber ) {
-            return 0;
+            double number;
+            number = inputNumber * inputNumber;
+            number += 101;
+            number /= 7;
+            number -= 4;
+            return Math.Round( number, 3 );
             }
 
         // implement this method so that it returns true if num is even, otherwise false
