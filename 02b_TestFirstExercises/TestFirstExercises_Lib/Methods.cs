@@ -4,14 +4,8 @@ namespace TestFirstExercises {
     public class Methods {
         // implement this method so that it returns true if x is greater than or equal to y
         public static bool GreaterEqual( int x, int y ) {
-            if ( x >= y ) {
-                return true;
-                }
-            else {
-                return false;
-                }
+            return x >= y;
             }
-
         // Implement this method so that it take an int as an input,
         // squares it, adds 101, divides the result by 7, then subtracts 4.  
         // Return a double rounded to 3 decimal places.
