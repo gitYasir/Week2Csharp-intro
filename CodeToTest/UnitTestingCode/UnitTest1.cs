@@ -2,30 +2,23 @@ using CodeToTest;
 
 namespace UnitTests {
     public class GreetingTests {
-        [Test]
-        public void GivenATimeOf21_Greeting_ReturnsGoodEvening() {
-            var time = 21;
-            var expectedGreeting = "Good evening!";
-            var result = Program.Greeting( time );
-            Assert.That( result, Is.EqualTo( expectedGreeting ) );
+        [TestCase( 0 )]
+        [TestCase( 4 )]
+        [TestCase( 19 )]
+        [TestCase( 24 )]
+        public void GivenATime_Greeting_ReturnsGoodEvening( int time ) {
+            Assert.That( "Good evening!", Is.EqualTo( Program.Greeting( time ) ) );
             }
-        [Test]
-        public void GivenATimeOf4_Greeting_ReturnsGoodEvening() {
-            var time = 4;
-            var expectedGreeting = "Good evening!";
-            var result = Program.Greeting( time );
-            Assert.That( result, Is.EqualTo( expectedGreeting ) );
-            }
-        [Test]
-        public void GivenATimeOf13_Greeting_ReturnsGoodAfternoon() {
-            var time = 13;
+        [TestCase( 13 )]
+        [TestCase( 18 )]
+        public void GivenATime_Greeting_ReturnsGoodAfternoon( int time ) {
             var expectedGreeting = "Good afternoon!";
             var result = Program.Greeting( time );
             Assert.That( result, Is.EqualTo( expectedGreeting ) );
             }
-        [Test]
-        public void GivenATimeOf6_Greeting_ReturnsGoodMorning() {
-            var time = 6;
+        [TestCase( 5 )]
+        [TestCase( 12 )]
+        public void GivenATime_Greeting_ReturnsGoodMorning( int time ) {
             var expectedGreeting = "Good morning!";
             var result = Program.Greeting( time );
             Assert.That( result, Is.EqualTo( expectedGreeting ) );
