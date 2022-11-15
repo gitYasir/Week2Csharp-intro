@@ -40,7 +40,7 @@ namespace TestFirstExercises {
         // implement this method so it returns true if input is "password"
         // regardless of case
         public static bool CheckInput( string input ) {
-            return false;
+            return input.Equals( "password", StringComparison.OrdinalIgnoreCase );
             }
 
         // implement this method so it returns the sum
