@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TestFirstExercises {
     public class Methods {
@@ -46,7 +47,7 @@ namespace TestFirstExercises {
         // implement this method so it returns the sum
         // of all the numbers in the list
         public static int SumList( List<int> list ) {
-            return -1;
+            return list.Sum();
             }
         }
     }
