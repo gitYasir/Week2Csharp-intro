@@ -65,7 +65,25 @@ namespace Op_CtrlFlow {
             }
 
         public static int GetScottishMaxWeddingNumbers( int covidLevel ) {
-            return 0;
+            int maxAttendees;
+            switch ( covidLevel ) {
+                case 4:
+                    maxAttendees = 20;
+                    break;
+                case 3:
+                    maxAttendees = 50;
+                    break;
+                case 2:
+                    maxAttendees = 50;
+                    break;
+                case 1:
+                    maxAttendees = 100;
+                    break;
+                default:
+                    maxAttendees = 200;
+                    break;
+                }
+            return maxAttendees;
             }
         }
     }

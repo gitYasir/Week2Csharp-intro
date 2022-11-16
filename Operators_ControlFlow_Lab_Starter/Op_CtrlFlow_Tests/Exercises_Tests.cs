@@ -54,9 +54,18 @@ namespace Op_CtrlFlow_Tests {
         [TestCase( 39, "Fail" )]
         [TestCase( 0, "Fail" )]
         [TestCase( -1, "Error! Max Score is 100" )]
-
-        public void UniGrades( int mark, string expected ) {
+        public void UniGradesTests( int mark, string expected ) {
             var result = Exercises.Grade( mark );
+            Assert.That( result, Is.EqualTo( expected ) );
+            }
+
+        [TestCase( 4, 20 )]
+        [TestCase( 3, 50 )]
+        [TestCase( 2, 50 )]
+        [TestCase( 1, 100 )]
+        [TestCase( 0, 200 )]
+        public void GetMaxAttendeesTests( int level, int expected ) {
+            var result = Exercises.GetScottishMaxWeddingNumbers( level );
             Assert.That( result, Is.EqualTo( expected ) );
             }
         }
