@@ -61,3 +61,11 @@
 //    }
 
 #endregion
+#region 
+
+//string greeting = null;
+//if ( greeting != null & greeting.ToLower().StartsWith( 'a' ) ) {
+//    Console.WriteLine( $"{greeting} starts with 'a'" );
+//    }
+
+#endregion
