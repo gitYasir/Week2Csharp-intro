@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ControlFlowApp\ControlFlowApp.csproj" />
     <ProjectReference Include="..\Operators\Operators.csproj" />
   </ItemGroup>
 
