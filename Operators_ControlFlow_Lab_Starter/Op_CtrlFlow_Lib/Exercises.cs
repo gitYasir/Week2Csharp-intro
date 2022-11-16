@@ -24,6 +24,23 @@ namespace Op_CtrlFlow {
         // "Free" if they are under 5
         public static string TicketType( int age ) {
             string ticketType = string.Empty;
+            switch ( age ) {
+                case < 5:
+                    ticketType = "Free";
+                    break;
+                case < 13:
+                    ticketType = "Child";
+                    break;
+                case < 18:
+                    ticketType = "Student";
+                    break;
+                case >= 60:
+                    ticketType = "OAP";
+                    break;
+                default:
+                    ticketType = "Standard";
+                    break;
+                }
             return ticketType;
             }
 
