@@ -31,7 +31,7 @@ public partial class CheckGrade {
             case 3:
                 priority += "Red";
                 break;
-            case 2:
+            case 2: // If nothing, it moves on to the next case and return that. i.e Amber in this case.
             case 1:
                 priority += "Amber";
                 break;
@@ -45,6 +45,21 @@ public partial class CheckGrade {
         return priority;
         }
 
+    public static string DrivingLaw( int age ) {
+        string law = "";
+        switch ( age ) {
+            case < 18:
+                law = "Cannot legally drive";
+                break;
+            case < 23:
+                law = "Can legally drive, but cannot hire a car";
+                break;
+            default:
+                law = "Can legally drive and rent a car";
+                break;
+            }
+        return law;
+        }
 
 
     }
