@@ -23,6 +23,30 @@ public partial class CheckGrade {
             }
         return grade;
         }
+
+    public static string Priority( int level ) {
+        string priority = "Code ";
+
+        switch ( level ) {
+            case 3:
+                priority += "Red";
+                break;
+            case 2:
+            case 1:
+                priority += "Amber";
+                break;
+            case 0:
+                priority += "Green";
+                break;
+            default:
+                priority = "Error!";
+                break;
+            }
+        return priority;
+        }
+
+
+
     }
 
 
