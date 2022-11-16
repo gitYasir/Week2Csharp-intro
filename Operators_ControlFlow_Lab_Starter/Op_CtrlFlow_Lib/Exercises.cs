@@ -46,6 +46,21 @@ namespace Op_CtrlFlow {
 
         public static string Grade( int mark ) {
             var grade = "";
+            if ( mark >= 75 && mark <= 100 ) {
+                grade = "Pass with Distinction";
+                }
+            else if ( mark >= 60 && mark <= 74 ) {
+                grade = "Pass with Merit";
+                }
+            else if ( mark >= 40 && mark <= 59 ) {
+                grade = "Pass";
+                }
+            else if ( mark >= 0 && mark <= 39 ) {
+                grade = "Fail";
+                }
+            else {
+                grade = "Error! Max Score is 100";
+                }
             return grade;
             }
 

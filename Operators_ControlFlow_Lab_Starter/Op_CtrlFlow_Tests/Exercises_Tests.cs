@@ -43,5 +43,21 @@ namespace Op_CtrlFlow_Tests {
             var result = Exercises.TicketType( age );
             Assert.That( result, Is.EqualTo( expected ) );
             }
+
+        [TestCase( 101, "Error! Max Score is 100" )]
+        [TestCase( 100, "Pass with Distinction" )]
+        [TestCase( 75, "Pass with Distinction" )]
+        [TestCase( 74, "Pass with Merit" )]
+        [TestCase( 60, "Pass with Merit" )]
+        [TestCase( 59, "Pass" )]
+        [TestCase( 40, "Pass" )]
+        [TestCase( 39, "Fail" )]
+        [TestCase( 0, "Fail" )]
+        [TestCase( -1, "Error! Max Score is 100" )]
+
+        public void UniGrades( int mark, string expected ) {
+            var result = Exercises.Grade( mark );
+            Assert.That( result, Is.EqualTo( expected ) );
+            }
         }
     }
