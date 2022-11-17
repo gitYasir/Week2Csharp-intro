@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsApp", "Exceptions
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionDataTests", "ExceptionDataTypes\ExceptionDataTests.csproj", "{43424A3A-26CC-45D5-956C-06B63A47887B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericDataTypesApp", "NumericDataTypes\NumericDataTypesApp.csproj", "{575187A2-F513-4418-BC75-D4AD463950D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{43424A3A-26CC-45D5-956C-06B63A47887B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43424A3A-26CC-45D5-956C-06B63A47887B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43424A3A-26CC-45D5-956C-06B63A47887B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{575187A2-F513-4418-BC75-D4AD463950D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{575187A2-F513-4418-BC75-D4AD463950D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{575187A2-F513-4418-BC75-D4AD463950D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{575187A2-F513-4418-BC75-D4AD463950D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
