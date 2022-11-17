@@ -8,7 +8,21 @@ int mark = 35;
 //Console.WriteLine( grade );
 
 public partial class CheckGrade {
+    public static void Main( string[] args ) {
+        try {
+            Console.WriteLine( $"Anil's mark is 82: {GetGrade( 82 )}" );
+            Console.WriteLine( $"Phil's mark is -82: {GetGrade( -82 )}" );
+            }
+        catch ( ArgumentException e ) {
+            Console.WriteLine( "Invalid data, please try again" );
+            Console.WriteLine( e.Message );
+            }
+        }
     public static string GetGrade( int mark ) {
+        if ( mark > 0 || mark < 100 ) {
+            throw new ArgumentException(
+                $"Mark value of {mark} is outside range 0-100" );
+            }
         string grade = "";
         if ( mark >= 65 ) {
             if ( mark >= 85 ) {
