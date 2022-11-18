@@ -36,12 +36,55 @@
 
 //StringInterpolation( "Yasir" );
 
-static void ParsingStrings() {
-    Console.Write( "How many apples? " );
-    var input = Console.ReadLine() ?? "0";
-    int numApples;
-    bool success = Int32.TryParse( input, out numApples ); // Parse or TryParse
-    }
+//static void ParsingStrings() {
+//    Console.Write( "How many apples? " );
+//    var input = Console.ReadLine() ?? "0";
+//    int numApples;
+//    bool success = Int32.TryParse( input, out numApples ); // Parse or TryParse
+//    }
 
-ParsingStrings();
+//ParsingStrings();
+
+//OneDArrays();
+
+//static void OneDArrays() {
+//    int[] myIntArray = { 12, 23, 34, 45, 56 };
+
+//    Array.Reverse<int>( myIntArray );
+
+//    foreach ( var element in myIntArray ) {
+//        Console.WriteLine( element );
+//        }
+//    }
+
+//MultiDArrays();
+
+//static void MultiDArrays() {
+//    int[,] twoDArray = { { 1, 2, 3, 4, 5 }, { 10, 20, 30, 40, 50 }, { 20, 21, 22, 23, 24 } };
+
+//    Console.WriteLine( "twoDArray row by row" );
+//    for ( int i = 0; i < twoDArray.GetLength( 0 ); i++ ) {
+//        for ( int j = 0; j < twoDArray.GetLength( 1 ); j++ ) {
+//            Console.Write( $"({i}, {j}) {twoDArray[ i, j ]}\t" );
+//            }
+//        Console.WriteLine();
+//        }
+//    }
+
+JaggedArrays();
+
+static void JaggedArrays() {
+    int[][] jaggedArray = {
+        new int[] { 1, 2, 3, 4, 5 },
+        new int[] { 10, 20, 30, 40, 50 },
+        new int[] { 20, 21, 22, 23, 24 }
+    };
+
+    foreach ( var row in jaggedArray ) {
+        foreach ( var item in row ) {
+            Console.Write( $"{item} " );
+            }
+        Console.WriteLine();
+        }
+    }
 
