@@ -71,20 +71,60 @@
 //        }
 //    }
 
-JaggedArrays();
+//JaggedArrays();
 
-static void JaggedArrays() {
-    int[][] jaggedArray = {
-        new int[] { 1, 2, 3, 4, 5 },
-        new int[] { 10, 20, 30, 40, 50 },
-        new int[] { 20, 21, 22, 23, 24 }
-    };
+//static void JaggedArrays() {
+//    int[][] jaggedArray = {
+//        new int[] { 1, 2, 3, 4, 5 },
+//        new int[] { 10, 20, 30, 40, 50 },
+//        new int[] { 20, 21, 22, 23, 24 }
+//    };
 
-    foreach ( var row in jaggedArray ) {
-        foreach ( var item in row ) {
-            Console.Write( $"{item} " );
-            }
-        Console.WriteLine();
+//    foreach ( var row in jaggedArray ) {
+//        foreach ( var item in row ) {
+//            Console.Write( $"{item} " );
+//            }
+//        Console.WriteLine();
+//        }
+//    }
+
+//int[] arr = new int[ 5 ];
+
+//int[,] multiArr = new int[ 3, 5 ];
+
+//int[][] jaggedArr = new int[ 3 ][];
+//jaggedArr[ 0 ] = new int[ 5 ];
+//jaggedArr[ 1 ] = new int[ 4 ];
+//jaggedArr[ 2 ] = new int[ 5 ];
+
+//DateTimeMethods();
+
+//static void DateTimeMethods() {
+//    var now = DateTime.Now;
+//    Console.WriteLine( $"The time now is {now}" );
+//    Console.WriteLine( $"In ticks this is {now.Ticks}" );
+
+//    var birthdayIf18 = now.AddYears( -18 );
+//    Console.WriteLine(
+//        $"If you are 18 today, you were born on " +
+//        $"{birthdayIf18.ToString( "dd MMMM, yyyy" )}" );
+//    }
+
+Enums();
+
+static void Enums() {
+    Suit theSuit = Suit.HEARTS;
+    if ( theSuit == Suit.SPADES ) {
+        Console.WriteLine( $"Suit is {( int ) Suit.SPADES}!" );
+        }
+    else {
+        Console.WriteLine( $"The suit is not {( int ) Suit.SPADES}!" );
         }
     }
 
+public enum Suit {
+    HEARTS,
+    CLUBS,
+    DIAMONDS,
+    SPADES
+    }
