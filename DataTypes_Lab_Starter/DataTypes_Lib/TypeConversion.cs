@@ -1,17 +1,14 @@
 ﻿using System;
 
-namespace DataTypes_Lib
-{
-    public class TypeConversion
-    {
-        public static short UIntToShort(uint num)
-        {
-            return (short)num;
-        }
+namespace DataTypes_Lib {
+    public class TypeConversion {
+        public static short UIntToShort( uint num ) {
 
-        public static long FloatToLong(float num)
-        {
-            return (long)num;
+            return Convert.ToInt16( num );
+            }
+
+        public static long FloatToLong( float num ) {
+            return Convert.ToInt64( num );
+            }
         }
     }
-}

@@ -16,7 +16,7 @@ namespace DataTypes_Test {
         [Test]
         public void Mult_ReturnsCorrectProductOfFloats() {
             var result = Methods.Mult( 2.1f, 3.0f );
-            Assert.That( result, Is.EqualTo( 6.30000f ) );
+            Assert.That( result, Is.EqualTo( 6.30000f ).Within( 0.000001 ) );
             }
         }
     }
