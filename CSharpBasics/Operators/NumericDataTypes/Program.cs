@@ -28,18 +28,18 @@
 
             #region floating-point type
 
-            float sum = 0;
-            for ( int i = 0; i < 100_000; i++ ) {
-                sum += 2 / 5.0f;
-                }
-            Console.WriteLine( "2/5 added 100,000 times: " + sum );
-            Console.WriteLine( "2/5 multiplied by 100,000: " + 2 / 5.0f * 100_000 );
+            //float sum = 0;
+            //for ( int i = 0; i < 100_000; i++ ) {
+            //    sum += 2 / 5.0f;
+            //    }
+            //Console.WriteLine( "2/5 added 100,000 times: " + sum );
+            //Console.WriteLine( "2/5 multiplied by 100,000: " + 2 / 5.0f * 100_000 );
 
             #endregion
 
             #region conversions
 
-            var result = 5.5 / 5;
+            //var result = 5.5 / 5;
 
             ////overflow - when num type doesn't throw error but just restarts
             //byte num = Byte.MaxValue;
@@ -78,27 +78,34 @@
 
             // Convert Class
             // no conversion
-            var theInt = 5;
-            var anotherInt = Convert.ToInt32( theInt );
+            //var theInt = 5;
+            //var anotherInt = Convert.ToInt32( theInt );
 
-            // safe - widening
-            var myDouble = Convert.ToDouble( theInt );
+            //// safe - widening
+            //var myDouble = Convert.ToDouble( theInt );
 
-            // narrowing (unsafe) with no data loss
-            var myShort = Convert.ToInt16( theInt );
-            double myPi = 3.14;
-            float floatPi = Convert.ToSingle( myPi );
+            //// narrowing (unsafe) with no data loss
+            //var myShort = Convert.ToInt16( theInt );
+            //double myPi = 3.14;
+            //float floatPi = Convert.ToSingle( myPi );
 
-            // unsafe conversions with loss of data
-            int myCows = 260;
-            byte myByteCows = Convert.ToByte( myCows );
+            //// unsafe conversions with loss of data
+            //int myCows = 260;
+            //byte myByteCows = Convert.ToByte( myCows );
 
-            int myBankBalance = -2;
-            uint myPosBalance = Convert.ToUInt32( myBankBalance );
+            //int myBankBalance = -2;
+            //uint myPosBalance = Convert.ToUInt32( myBankBalance );
 
-            DateTime piDay = Convert.ToDateTime( myPi );
+            //DateTime piDay = Convert.ToDateTime( myPi );
 
-            int myFive = Convert.ToInt32( "FIve" );
+            //int myFive = Convert.ToInt32( "FIve" );
+
+            checked {
+                byte num = Byte.MaxValue;
+                Console.WriteLine( "Byte max: " + num );
+                num += 1;
+                Console.WriteLine( num );
+                }
 
             #endregion
             }
