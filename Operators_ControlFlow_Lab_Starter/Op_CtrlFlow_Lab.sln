@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Op_CtrlFlow", "Op_CtrlFlow_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Op_CtrlFlow_Tests", "Op_CtrlFlow_Tests\Op_CtrlFlow_Tests.csproj", "{45299C77-F0A8-4858-A465-1895238C0765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsApp", "LoopsApp\LoopsApp.csproj", "{8EB47640-0AF5-42D7-B4F1-22719AC1D7F9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{45299C77-F0A8-4858-A465-1895238C0765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45299C77-F0A8-4858-A465-1895238C0765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45299C77-F0A8-4858-A465-1895238C0765}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8EB47640-0AF5-42D7-B4F1-22719AC1D7F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EB47640-0AF5-42D7-B4F1-22719AC1D7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EB47640-0AF5-42D7-B4F1-22719AC1D7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EB47640-0AF5-42D7-B4F1-22719AC1D7F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
